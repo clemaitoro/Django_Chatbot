@@ -8,6 +8,12 @@ from .responses import bot_response
 def backend(request, slug=None):
     return HttpResponse("""<p> Hello from the back-end side </p>""")
 
+def get_first_message(requst, slug=None):
+    response = {
+        "message": "Hello there!"
+    }
+    return HttpResponse(json.dumps(response))
+
 
 
 def het_chat_response(request, slug=None):

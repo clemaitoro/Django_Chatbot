@@ -31,6 +31,7 @@ from frontend import views as frontend_views
 urlpatterns = [
     path("", frontend_views.frontend),
     path("server/", backend_views.backend),
-    path('server/get_chat_response', backend_views.het_chat_response)
+    path('server/get_chat_response', backend_views.het_chat_response),
+    path('server/get_first_message', backend_views.get_first_message)
     
 ]
