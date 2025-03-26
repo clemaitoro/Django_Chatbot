@@ -2,7 +2,7 @@ import random
 import string
 import requests
 msg=None
-key="b8d2833625b34875bea184542241004"
+key=""
 def bot_response(message):
     global msg  
 
